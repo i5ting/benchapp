@@ -2,6 +2,13 @@
 
 Benchmark Node.js Web Framework with `app.js`
 
+## Install
+
+```
+$ npm i -g benchapp
+```
+
+## Usages
 
 ```
 $ benchapp
