@@ -1,6 +1,10 @@
-# koa-serve-static
+# benchapp
+
+Benchmark Node.js Web Framework with `app.js`
+
 
 ```
-benchapp app.js /
+$ benchapp
+$ benchapp app
+$ benchapp app.js /
 ```
-
