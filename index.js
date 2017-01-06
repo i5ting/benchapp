@@ -28,15 +28,10 @@ if (argv.length >= 3){
     bench_path = argv[2]
 }
 
-//
-// for(var i in argv){
-//   var _argv = argv[i];
-//   if(_argv == '-s'  || first_arg == '--sudo'){
-//     pre = 'sudo ';
-//   }
-// }
+// connections: 100, //default
+// pipelining:10,
+// duration: 5
 
-//
 var app = require(app_path)
 
 function createServer(name, app) {
