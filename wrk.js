@@ -31,7 +31,7 @@ module.exports = function(server, bench_path){
         }
         // console.log('finished bench', err, res)
         // instance.stop()
-        process.exit(0)
+        // process.exit(0)
         resolve(res)
       }
     })

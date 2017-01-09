@@ -42,9 +42,13 @@ function createServer(name, app) {
 
 if (typeof app.callback === 'function') {
     let server = createServer(app_path, app.callback())
-    return require('./wrk')(server, bench_path)
+    return require('./wrk')(server, bench_path).then(function(){
+         process.exit(0)
+    })
 } else {
     let server = createServer(app_path, app)
-    return require('./wrk')(server, bench_path)
+    return require('./wrk')(server, bench_path).then(function(){
+         process.exit(0)
+    })
 }
 
