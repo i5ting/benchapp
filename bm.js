@@ -12,7 +12,7 @@ var argv = process.argv;
 argv.shift();
 argv.shift();
 
-console.log(argv)
+// console.log(argv)
 
 var file_path = __dirname;
 var current_path = process.cwd() ;
@@ -43,7 +43,7 @@ function createServer(name, app) {
 
 return Promise.reduce(argv, (total, app_path, index) => {
     app_path = path.join(current_path , app_path)
-    console.log(app_path)
+    // console.log(app_path)
 	var app = require(app_path)
     if (typeof app.callback === 'function') {
         let server = createServer(app_path, app.callback())
